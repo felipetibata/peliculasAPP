@@ -1,0 +1,26 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Peliculas APP</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/home']"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/buscar']"><i class="fa fa-search" aria-hidden="true"></i>&nbsp; Buscar</a>
+      </li>
+    </ul>
+    <form class="form-inline">
+      <div class="input-group input-group-sm">
+        <input type="text" class="form-control" name="name" id="name" placeholder="" aria-label="">
+        <span class="input-group-btn">
+          <button class="btn btn-primary btn-sm" type="button" aria-label=""><i class="fa fa-search" aria-hidden="true"></i></button>
+        </span>
+      </div>
+    </form>
+  </div>
+</nav>
