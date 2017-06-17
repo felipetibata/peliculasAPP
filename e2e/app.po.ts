@@ -1,5 +1,6 @@
 import { browser, by, element } from 'protractor';
 
+
 export class PeliculasAPPPage {
   navigateTo() {
     return browser.get('/');
