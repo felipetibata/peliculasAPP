@@ -1,3 +1,8 @@
+
+# PeliculasAPP
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
+=======
 # angular2Base
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
@@ -6,6 +11,7 @@ Bootstrap Currently v4.0.0-alpha.6
   JQuery 3.2.1
   Tether 1.3.3
 Font Awesome 4
+
 
 
 ## Development server
