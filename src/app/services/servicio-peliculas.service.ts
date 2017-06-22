@@ -19,10 +19,13 @@ export class ServicioPeliculasService {
     }
     );
   }
-
+  /**
+   *
+   * @param pelicula
+   */
   buscarPeliculas(pelicula: string) {
     // tslint:disable-next-line:max-line-length
-    let url = `${this.urlMoviedb}/search/movie?query=${pelicula}&sort_by=popularity.desc&api_key=${this.apikey}&language=es&callback=JSONP_CALLBACK`;
+    let url = `${this.urlMoviedb}/search/movie?api_key=${this.apikey}&query=${pelicula}&language=es&callback=JSONP_CALLBACK`;
     return this.jsonP.get(url).map(res => {
       return res.json();
       /*console.log(res);*/

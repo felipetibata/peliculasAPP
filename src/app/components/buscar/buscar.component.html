@@ -1,3 +1,24 @@
-<p>
-  buscar works!
-</p>
+<div class="row">
+  <div class="col-xl-12 text-center">
+    <h1>Resultados para <small>{{nombre}}</small></h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="card-columns">
+
+      <div class="card card-outline-info" *ngFor="let pelicula of peliculas;">
+        <img class="card-img-top img-fluid mx-auto d-block" src="https://image.tmdb.org/t/p/w342{{pelicula.poster_path}}" alt="">
+        <div class="card-block">
+          <h4 class="card-title">{{pelicula.original_title}}</h4>
+          <p class="card-text">{{pelicula.overview|slice:0:200}}..</p>
+          <button class="btn btn-outline-info btn-block" [routerLink]="['/detallePelicula',pelicula.id]">
+            <i class="fa fa-search" aria-hidden="true"></i>&nbsp;
+            Detalles
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

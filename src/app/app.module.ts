@@ -9,6 +9,7 @@ import { APP_RUTAS } from 'app/app.routes';
 import { ServicioPeliculasService } from 'app/services/servicio-peliculas.service';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { DetallePeliculaComponent } from './components/detalle-pelicula/detalle-pelicula.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { DetallePeliculaComponent } from './components/detalle-pelicula/detalle-
     BrowserModule,
     HttpModule,
     JsonpModule,
-    APP_RUTAS
+    APP_RUTAS,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ServicioPeliculasService],
   bootstrap: [AppComponent]

@@ -6,8 +6,8 @@ import { DetallePeliculaComponent } from 'app/components/detalle-pelicula/detall
 
 const RUTAS: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'buscar', component: BuscarComponent },
   { path: 'detallePelicula/:id', component: DetallePeliculaComponent },
+  { path: 'buscar/:nombre', component: BuscarComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', pathMatch: 'full', component: HomeComponent }
 ];
